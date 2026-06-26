@@ -16,6 +16,8 @@ while True:
     print(f"Remaining attempt", lives - count)
     count = count + 1
     user = int(input("enter a number"))
+    if user<0 or user>10:
+            print("Enter between 1 to 10")
     if user == random_num:
         print("guessed successfully")
         print("attempt", count)

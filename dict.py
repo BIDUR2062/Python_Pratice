@@ -56,7 +56,7 @@ data = {
 print(f' {data["name"]} {data['phone'][0]['type']} number is {data["phone"][0]['number']} ')
 print(f' {data["name"]} {data['phone'][1]['type']} number is {data["phone"][1]['number']} ')
 
-print(fifa_world_cup_2026.get('to','Key value is not found'))
+print(fifa_world_cup_2026.get('to','Key value is not found on dict'))
 
 #items
 #keys
