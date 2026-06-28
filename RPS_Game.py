@@ -12,14 +12,18 @@ while True:
     if user_input not in computer_input:
         print('Enter r, p, s in your choice!')
         continue
-    if user_input==computer_choice:
+    elif user_input==computer_choice:
         print("Draw")
         print("Please put another choice!")
     elif wins[computer_choice]==user_input:
         print('Computer won')
         print(f'Computer Choice {computer_choice} and user Choice {user_input}')
+        data=input("Do you Want to play again: ").lower()
+
     else:
         print("user won")
         print(f'Computer Choice {computer_choice} and user Choice {user_input}')
-        break
+    user_choice=input("Do you want to play again y fot Yes and n for No: ") 
+    if user_choice=='n':
+        break  
     
